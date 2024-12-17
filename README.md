@@ -1,45 +1,102 @@
 # Share-Spreader
-<<<<<<< HEAD
 
-**Share-Spreader** is a powerful and efficient tool designed to help users quickly share content across multiple platforms. It aims to make social sharing easy and consistent, enabling users to expand their reach and increase engagement with minimal effort.
+Share-Spreader is a powerful and efficient tool designed to help users quickly share and publish content across multiple blogging platforms with ease. Whether you're a blogger, marketer, or content creator, Share-Spreader enables you to expand your reach, save time, and ensure consistency.
 
 ## Features
 
-- **Multi-Platform Sharing**: Share content across social media, messaging apps, and other platforms.
-- **Customizable Templates**: Create and save templates for different types of posts.
+- **Multi-Platform Publishing**: Automatically publish blog posts on platforms like Medium, Dev.to, Hashnode, LinkedIn, and more.
+- **Customizable Templates**: Predefine content templates for consistent formatting across platforms.
 - **Scheduling**: Schedule posts to go live at specific times on various platforms.
-- **Analytics Integration**: Track the performance of shared content across platforms.
-- **User-Friendly Interface**: Clean and simple design for easy navigation.
+- **User-Friendly Interface**: Simple and clean design for easy navigation and usage.
+- **Efficient Backend**: Built with high performance and scalability in mind using microservices architecture.
+
+---
+
+## Tech Stack
+
+- **Golang**: For backend microservices and API integration.
+- **gRPC**: For inter-service communication between different services.
+- **Plain HTML & CSS**: For a lightweight and responsive frontend.
+
+---
 
 ## Getting Started
 
-Follow these instructions to get Share-Spreader up and running on your local machine.
+Follow these steps to get Share-Spreader up and running on your local machine.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) (for JavaScript/Node-based projects)
-- [Python 3.x](https://www.python.org/) (for Python-based projects)
-- Any other required software or libraries
+Ensure you have the following installed:
+- [Go](https://golang.org/) (Golang programming language)
+- [gRPC Tools](https://grpc.io/docs/) (for building and running gRPC services)
+- Any modern web browser for frontend testing
 
 ### Installation
 
-1. **Clone the repository**:
-    ```bash
+1. **Clone the Repository**:
+   ```bash
    git clone https://github.com/yourusername/Share-Spreader.git
+   cd Share-Spreader
+   ```
 
-2. Install dependencies:
-    ```bash
-    npm install
+2. **Backend Setup**:
+   - Navigate to the backend folder:
+     ```bash
+     cd backend
+     ```
+   - Install dependencies and build the backend services:
+     ```bash
+     go mod tidy
+     go build
+     ```
+   - Run the backend services:
+     ```bash
+     go run main.go
+     ```
 
-### Contributing
+3. **Frontend Setup**:
+   - Navigate to the frontend folder:
+     ```bash
+     cd frontend
+     ```
+   - Open `index.html` in your browser to test the frontend interface.
 
-Contributions are welcome! Feel free to submit issues, request features, or create pull requests.
+4. **gRPC Service Setup**:
+   - Ensure gRPC services are running to enable seamless communication between microservices.
 
-- Fork the project
-- Create a feature branch (git checkout -b feature/YourFeature)
-- Commit your changes (git commit -m 'Add some feature')
-- Push to the branch (git push origin feature/YourFeature)
-- Open a pull request
-=======
-Share-spreader is a tool that allows usersto write a single blog post and automatically publish it across multiple blogging platforms(e.g.,Medium, Dev.to, Hashnode, Linkedin etc).
->>>>>>> b1413df (modify files)
+---
+
+## Usage
+
+1. Upload or write your blog content.
+2. Choose the platforms you want to publish to (e.g., Medium, Dev.to, LinkedIn).
+3. Customize or use pre-built templates for your posts.
+4. Schedule the post or publish immediately.
+5. Monitor post status and performance analytics (future feature).
+
+---
+
+## Contributing
+
+Contributions are welcome! If you'd like to add new features, fix bugs, or improve the project, follow these steps:
+
+1. **Fork the Project**
+2. **Create a Feature Branch**:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Commit Your Changes**:
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+4. **Push to the Branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. **Open a Pull Request**
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
