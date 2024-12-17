@@ -1,4 +1,5 @@
 # Share-Spreader
+<<<<<<< HEAD
 
 **Share-Spreader** is a powerful and efficient tool designed to help users quickly share content across multiple platforms. It aims to make social sharing easy and consistent, enabling users to expand their reach and increase engagement with minimal effort.
 
@@ -39,3 +40,6 @@ Contributions are welcome! Feel free to submit issues, request features, or crea
 - Commit your changes (git commit -m 'Add some feature')
 - Push to the branch (git push origin feature/YourFeature)
 - Open a pull request
+=======
+Share-spreader is a tool that allows usersto write a single blog post and automatically publish it across multiple blogging platforms(e.g.,Medium, Dev.to, Hashnode, Linkedin etc).
+>>>>>>> b1413df (modify files)
