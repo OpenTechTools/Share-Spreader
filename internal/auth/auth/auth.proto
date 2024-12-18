@@ -1,0 +1,19 @@
+syntax = "proto3";
+package auth;
+
+option go_package = "/auth";
+
+// Example service definition
+service Auth {
+    rpc AccessSpreaderService (ServiceRequest) returns (ServiceResponse);
+}
+
+// Example request message
+message ServiceRequest {
+    bool authorized = 1;
+}
+
+// Example response message
+message ServiceResponse {
+    string access = 1;
+}
